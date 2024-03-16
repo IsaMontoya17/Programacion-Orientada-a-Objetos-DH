@@ -37,5 +37,13 @@ public class Contenedor {
         this.transportaMaterialesPeligrosos = transportaMaterialesPeligrosos;
     }
 
+    @Override
+    public String toString() {
+        return "Contenedor{" +
+                "\n   Número: " + numero +
+                "\n   Procedencia: " + procedencia +
+                "\n   Transporta materiales peligrosos: " + transportaMaterialesPeligrosos +
+                "\n}";
+    }
 
 }
