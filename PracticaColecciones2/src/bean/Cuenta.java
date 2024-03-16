@@ -28,6 +28,6 @@ public class Cuenta implements Comparable<Cuenta>{
 
     @Override
     public int compareTo(Cuenta o) {
-        return 0;
+        return (int)(this.sueldo - o.getSueldo());
     }
 }
