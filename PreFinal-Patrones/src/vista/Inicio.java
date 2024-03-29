@@ -46,8 +46,19 @@ public class Inicio {
         System.out.println("El precio del taller 2 es de " + taller2.calcularPrecio());
 
         Carrera carrera = new Carrera("Desarrollo de Software", "Incluye programación y diseño web", 2000);
-        carrera.agregarCursoTaller(curso5);
-        carrera.agregarCursoTaller(curso2);
+        Boolean resultado = carrera.validacionCargaHorariaCurso(curso5);
+        if(resultado==true){
+            carrera.agregarCursoTaller(curso5);
+        }
+        resultado = carrera.validacionCargaHorariaCurso(curso2);
+        if(resultado==true){
+            carrera.agregarCursoTaller(curso2);
+        }
+        resultado = carrera.validacionCargaHorariaCurso(curso1);
+        if(resultado==true){
+            carrera.agregarCursoTaller(curso1);
+        }
+
         carrera.agregarCursoTaller(taller1);
 
         carrera.calcularPrecio();
