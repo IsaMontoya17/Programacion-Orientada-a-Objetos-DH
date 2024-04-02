@@ -21,14 +21,9 @@ public class Inicio2 {
             almacen.getEspacioproductos().add(espacio);
         }catch (IllegalArgumentException ex){
             System.err.println(ex.getMessage());
-        }finally {
-            try{
-                scanner.close();
-
-            }catch (Exception e){
-                e.getStackTrace();
-            }
         }
+
+        scanner.close();
 
         scanner.close();
         System.out.println("Espacio necesario en el almacen: " + almacen.calcularEspacioNecesario());

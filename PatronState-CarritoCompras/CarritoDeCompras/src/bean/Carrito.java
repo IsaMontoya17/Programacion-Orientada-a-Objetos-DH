@@ -46,7 +46,7 @@ public class Carrito {
                 respuesta = JOptionPane.showOptionDialog(null, "¿Desea agregar otro producto?", "Agregar Producto", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, new Object[]{"Sí", "No"}, "Sí");
                 if(respuesta == JOptionPane.YES_OPTION) {
                     product = vProducto.crearProducto();
-                    getEstado().agregarProducto(producto);
+                    getEstado().agregarProducto(product);
                 }
             }while(respuesta == JOptionPane.YES_OPTION);
 
